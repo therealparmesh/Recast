@@ -1,0 +1,9 @@
+.build/
+.swiftpm/
+dist/
+/Resources/AppIcon.icns
+*.xcodeproj/
+xcuserdata/
+DerivedData/
+.DS_Store
+.mise.local.toml

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>Recast</string>
+    <key>CFBundleDisplayName</key>
+    <string>Recast</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.parmscript.recast</string>
+    <key>CFBundleExecutable</key>
+    <string>Recast</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1.0.0</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>26.0</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>SUFeedURL</key>
+    <string>https://github.com/therealparmesh/Recast/releases/latest/download/appcast.xml</string>
+    <key>SUPublicEDKey</key>
+    <string>a1FY4Kiq6NPvlWqHPWM5IW+XgSWC7ZJga0I0wB7eYSc=</string>
+    <key>SUEnableAutomaticChecks</key>
+    <true/>
+    <key>SUEnableInstallerLauncherService</key>
+    <true/>
+</dict>
+</plist>

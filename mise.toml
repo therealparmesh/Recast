@@ -1,0 +1,37 @@
+[tools]
+swiftlint = "latest"
+
+[tasks.build]
+description = "Debug build"
+run = "swift build"
+
+[tasks.run]
+description = "Build and run the bundled app"
+run = """
+set -euo pipefail
+pkill -x Recast 2>/dev/null || true
+./Scripts/make-icon.sh
+./Scripts/bundle.sh --config debug
+open -n dist/Recast.app
+"""
+
+[tasks.lint]
+description = "Run SwiftLint (strict)"
+run = "swiftlint lint --strict"
+
+[tasks.release-build]
+description = "Release build"
+run = "swift build --configuration release"
+
+[tasks.icon]
+description = "Generate Resources/AppIcon.icns"
+run = "./Scripts/make-icon.sh --force"
+
+[tasks.app]
+description = "Assemble dist/Recast.app (ad-hoc signed)"
+depends = ["icon"]
+run = "./Scripts/bundle.sh --config release"
+
+[tasks.clean]
+description = "Remove build and dist artifacts"
+run = "swift package clean && rm -rf .build dist Resources/AppIcon.icns"
